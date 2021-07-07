@@ -1,0 +1,6 @@
+const daftarvip = (prefix) => { 
+	return `
+	
+Você nao`
+}
+exports.daftarvip = daftarvip

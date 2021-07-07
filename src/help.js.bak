@@ -1,0 +1,296 @@
+const help = (prefix, sender, pushname, time) => {
+
+	return `
+──────▄▀▄─────▄▀▄
+─────▄█░░▀▀▀▀▀░░█▄
+─▄▄──█░░░░░░░░░░░█──▄▄
+█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█
+         ╔═.✵.══════════╗        
+                 𝐒𝐇𝐔𝐑𝐄𝐊 𝐁𝐎𝐓☂︎
+         ╚══════════.✵.═╝
+ 
+
+  Olá, ${pushname}! Bem vindo ao menu.
+
+╭────「 INFO 」───────────╮
+│                       
+│                          
+┣⊱ Dono:                       
+│Henrique
+│                                            
+┣⊱ Nmr do Dono: 
+│wa.me/5521997112002
+│                                            
+┣⊱ Seu link:
+│wa.me/${sender.split("@")[0]}   
+│                                            
+┣⊱ Velocidade:           
+│${process.uptime()}         
+│                                  
+┣⊱Data e hora: ${time}                       
+│                                            
+┣⊱Trabalhando à:    
+│${kyun(uptime)}
+│
+╰───────────────────╯
+
+╭────「 COMANDOS NOVOS 」
+│                          
+┣⊱  *${prefix}gays*              
+┣⊱  *${prefix}gostosa*               
+┣⊱  *${prefix}casal*                 
+┣⊱  *${prefix}cornos*        
+┣⊱  *Olhe os interativos*
+┣⊱  *${prefix}attp* texto (faz figu com texto)
+┣⊱  *${prefix}sn* + (Sua pergunta)
+┣⊱  *Comandos de editar audio (olhe em audios para ver quais são)*
+┣⊱  *${prefix}caracoroa*
+┣⊱  *${prefix}dado2*
+┣⊱  *${prefix}abraço*
+┣⊱  *${prefix}contar*
+┣⊱  *${prefix}otakus*
+┣⊱  *${prefix}gados*
+┣⊱  *${prefix}antifake*
+┣⊱  *${prefix}antispam*
+┣⊱  *${prefix}abraço*
+┣⊱  *${prefix}pmake*
+┣⊱  *${prefix}sekisu*
+┣⊱  *${prefix}beijar*
+│                          
+╰──────────────────────
+│═༒︎〘 MENU 〙༒︎══
+│
+┣⊱  *${prefix}sticker*
+┣⊱  *${prefix}toimg*
+┣⊱  *${prefix}darkjokes*
+┣⊱  *${prefix}tts pt (texto)*
+┣⊱  *${prefix}lolih*
+┣⊱  *${prefix}leens*
+┣⊱  *${prefix}wait*
+┣⊱  *${prefix}setprefix*
+│
+╭────「 OUTROS 」────
+│                      
+┣⊱  *${prefix}linkgp*          
+┣⊱  *${prefix}simih*     
+┣⊱  *${prefix}marcar*          
+┣⊱  *${prefix}add*         
+┣⊱  *${prefix}banir*       
+┣⊱  *${prefix}promover*    
+┣⊱  *${prefix}rebaixar*        
+┣⊱  *${prefix}admins*          
+┣⊱  *${prefix}marcar2*         
+┣⊱  *${prefix}bc*              
+┣⊱  *${prefix}marcar3*         
+┣⊱  *${prefix}bloqueados*      
+┣⊱  *${prefix}bloquear*    
+┣⊱  *${prefix}desbloquear* 
+┣⊱  *${prefix}limpar*          
+┣⊱  *${prefix}bc*  
+┣⊱  *${prefix}bemvindo*  
+┣⊱  *${prefix}clonar*      
+┣⊱  *${prefix}help1*           
+┣⊱  *${prefix}dono*            
+┣⊱  *${prefix}owner*           
+┣⊱  *${prefix}tts*     
+┣⊱  *${prefix}termux*          
+┣⊱  *${prefix}setfoto*         
+┣⊱  *${prefix}grupoinfo*       
+┣⊱  *${prefix}ytmp4*           
+┣⊱  *${prefix}bomdia*          
+┣⊱  *${prefix}boanoite*        
+┣⊱  *${prefix}marcar*          
+┣⊱  *${prefix}marcar2*         
+┣⊱  *${prefix}marcar3*         
+│                      
+╰────────────────
+╭────「 INTERAÇÕES 」────
+│                      
+┣⊱  *${prefix}sn (texto)*          
+┣⊱      *⚓Responde Sim ou Não*
+┣⊱  *${prefix}rola*          
+┣⊱      *⚓Mede seu pau*        
+┣⊱  *${prefix}chance* (alguma previsão)
+┣⊱      *⚓Mede as chances de algo acontecer*
+┣⊱  *${prefix}top5*        
+┣⊱      *⚓Faz um top5*          
+┣⊱  *${prefix}gado*         
+┣⊱  *${prefix}morte*              
+┣⊱  *${prefix}lindos*         
+┣⊱  *${prefix}gostosa*      
+┣⊱  *${prefix}cornos* 
+┣⊱  *${prefix}macaco*
+┣⊱  *${prefix}lindos*
+┣⊱  *${prefix}feios*
+┣⊱  *${prefix}gays* 
+┣⊱  *${prefix}casal*          
+┣⊱  *${prefix}otakus*  
+┣⊱  *${prefix}pau*  
+┣⊱      *⚓Diferente do !rola*      
+┣⊱  *${prefix}nazista*
+┣⊱  *${prefix}judeu*
+┣⊱  *${prefix}pedofilo
+┣⊱  *${prefix}mamaco*
+┣⊱  *${prefix}gados*
+┣⊱  *${prefix}abraço*
+┣⊱  *${prefix}sekisu*
+┣⊱  *${prefix}beijar*
+│                      
+╰────────────────
+╭────「 AUDIOS 」──
+│                    
+║Ⓢ *${prefix}estourar*
+║❗Utilidade-deixa audio estourado
+║Ⓢ *${prefix}bass*
+║❗Utilidade-efeito bass para audio
+║Ⓢ *${prefix}fast*
+║❗Utilidade-deixa audio rapido
+║Ⓢ *${prefix}gemuk*
+║❗Utilidade-deixa audio longo
+║Ⓢ *${prefix}esquilo*
+║❗Utilidade-voz de esquilo
+║Ⓢ *${prefix}slow*
+║❗Utilidade-deixa audio lento
+║Ⓢ *${prefix}nightcore*
+║❗Utilidade-efeito nightcore para audio
+│                    
+╰────────────────
+╭────「 IMAGENS 」──
+│                    
+┣⊱  *${prefix}loli*          
+┣⊱  *${prefix}loli1*         
+┣⊱  *${prefix}hentai*        
+┣⊱  *${prefix}dono*          
+┣⊱  *${prefix}porno*         
+┣⊱  *${prefix}boanoite*      
+┣⊱  *${prefix}bomdia*        
+┣⊱  *${prefix}boatarde*      
+┣⊱  *${prefix}mia*           
+┣⊱  *${prefix}rize*          
+┣⊱  *${prefix}minato*        
+┣⊱  *${prefix}naruto *       
+┣⊱  *${prefix}meme*          
+┣⊱  *${prefix}lofi*          
+┣⊱  *${prefix}malkova*              
+┣⊱  *${prefix}nsfwloli1*     
+┣⊱  *${prefix}reislin*       
+┣⊱  *${prefix}pmake*
+│                    
+╰────────────────
+╭─「 INTELIGÊNCIA 」
+│                         
+┣⊱  *${prefix}simih 1*            
+┣⊱  *${prefix}simih 0*            
+┣⊱  *${prefix}simi*               
+│                         
+╰─────────────────
+╭──「 EM PRODUÇÃO 」─╮
+│                       
+┣⊱  *${prefix}gado*             
+┣⊱  *${prefix}dbz*                      
+┣⊱  *${prefix}hidegp*           
+│                       
+╰─────────────────╯
+
+╭──────「 GRUPO 」──╮
+│                   
+┣⊱  *${prefix}antilink*
+┣⊱  *${prefix}antispam*
+┣⊱  *${prefix}antifake*       
+┣⊱  *${prefix}banir*              
+┣⊱  *${prefix}abrirgp*
+┣⊱  *${prefix}fechargp*
+┣⊱  *${prefix}leveling*   
+┣⊱  *${prefix}level*               
+┣⊱  *${prefix}add*                 
+┣⊱  *${prefix}promover*            
+┣⊱  *${prefix}setfoto*
+┣⊱  *${prefix}setname*     
+┣⊱  *${prefix}rebaixar*            
+┣⊱  *${prefix}admins*              
+┣⊱  *${prefix}marcar*              
+┣⊱  *${prefix}marcar2*             
+┣⊱  *${prefix}marcar3*             
+┣⊱  *${prefix}bemvindo*      
+┣⊱  *${prefix}grupoinfo*            
+┣⊱  *${prefix}bomdia*              
+┣⊱  *${prefix}boatarde*            
+┣⊱  *${prefix}boanoite*            
+┣⊱  *${prefix}setdesc*             
+┣⊱  *${prefix}bug*                 
+│                          
+╰─────────────────╯
+╭───「 ESPECÍFICO 」──╮
+│                                  
+┣⊱  *${prefix}bug*                         
+┣⊱  *${prefix}clonar*                  
+┣⊱  *${prefix}dono*                        
+┣⊱  *${prefix}ping*                        
+┣⊱  *${prefix}termux*                      
+┣⊱  *${prefix}gay*                     
+┣⊱  *${prefix}wame*                        
+┣⊱  *${prefix}map*                  
+┣⊱  *${prefix}setppbot*   
+┣⊱  *${prefix}pinterest*                                   
+┣⊱  *${prefix}desligar*   
+┣⊱  *${prefix}timer*                       
+│                                  
+╰───────────────────╯
+╭──────「 MAIS 」───╮
+│                                         
+┣⊱  *${prefix}attp*                     
+┣⊱  *${prefix}testime*                 
+┣⊱  *${prefix}tomp3*                   
+┣⊱  *${prefix}modoanime*       
+┣⊱  *${prefix}happymod*                
+┣⊱  *${prefix}rize*                    
+┣⊱  *${prefix}ytsearch*                
+┣⊱  *${prefix}moddroid*                
+┣⊱  *${prefix}xvideos*                 
+┣⊱  *${prefix}nomegp*                  
+┣⊱  *${prefix}darkjokes*               
+┣⊱  *${prefix}gay1*                    
+┣⊱  *${prefix}alerta*                  
+┣⊱  *${prefix}belle*                 
+┣⊱  *${prefix}hobby*                 
+│                      
+╰──────────────────╯
+╭──「 COMANDOS DE VOZ 」─
+│                                 
+┣⊱  *${prefix}musica*
+┣⊱  *${prefix}msc*
+┣⊱  *${prefix}gtts pt (texto)                                                       
+│                                 
+╰──────────────────
+╭──────「 OUTROS/2 」──╮
+│                              
+┣⊱  *${prefix}bot*                     
+┣⊱  *${prefix}antilink*          
+┣⊱  *${prefix}antiracismo*    
+┣⊱  *${prefix}setnomebot*              
+┣⊱  *${prefix}meme*                    
+│                              
+╰────────────────────╯
+╭──「 SEM PREFIX 」──╮
+│                            
+┣⊱  *bah*                     
+┣⊱  *oii*                     
+┣⊱  *bv*                      
+┣⊱  *canta ai bot*            
+┣⊱  *grita*                   
+│                             
+╰──────────────────╯\n\n*Créditos:*${prefix}cred`
+function kyun(seconds){
+  function pad(s){
+    return (s < 10 ? '0' : '') + s;
+  }
+  var Horas = Math.floor(seconds / (60*60));
+  var Minutos = Math.floor(seconds % (60*60) / 60);
+  var Segundos = Math.floor(seconds % 60);
+
+  //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
+  return `${pad(Horas)} Horas ${pad(Minutos)} Minutos ${pad(Segundos)} Segundos`
+}
+}
+exports.help = help
+
